@@ -188,11 +188,13 @@ m.elev2 <-
       # Here's where you specify parameters for executing the Markov chains
       # We're using similar to the defaults, except we set cores to 4 so the analysis runs faster than the default of 1
       iter = 6000, warmup = 4000, chains = 4, cores = 4,
-      prior = prior(normal(0, 0.1), class = b),
+      prior = prior(normal(0, 0.5), class = b),
       # Save the fitted model object as output - helpful for reloading in the output later
       file = "output/m.elev2")
 
 ```
+
+checking the model
 
 
 ### Plot the posterior
